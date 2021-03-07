@@ -10,6 +10,8 @@ _____       ___   __   _   _____   _____    _   _____
 
 */
 
+@import "./panfrie/code.block.high.light.css";
+
 :root {
   /* dark color for background*/
   /* default color */
@@ -118,42 +120,25 @@ _____       ___   __   _   _____   _____    _   _____
 }
 
 /* font */
+
+
 @font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Open Sans Regular"), url("./panfrie/400.woff") format("woff");
+  font-family: "poppin";
+  src: url("./panfrie/poppin.ttf");
 }
 
 @font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: normal;
-  src: local("Open Sans Italic"), url("./panfrie/400i.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: bold;
-  src: local("Open Sans Bold"), url("./panfrie/700.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: bold;
-  src: local("Open Sans Bold Italic"), url("./panfrie/700i.woff") format("woff");
+  font-family: "jetbrainsmono";
+  src: url("./panfrie/JetBrainsMono-Regular.ttf");
 }
 
 /* basic style */
 html {
-  font-size: 14.5px;
+  font-size: 15.5px;
 }
 
 body {
-  font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "poppin";
   color: var(--text-color1);
   background: var(--bg-color1);
   line-height: 1.6;
@@ -171,6 +156,7 @@ body {
 /* link */
 #write a:not([role="menuitem"]) {
   color: var(--link-color) !important;
+  text-decoration: none;
 }
 
 #write a:not([role="menuitem"]):hover {
@@ -223,9 +209,9 @@ h4 {
 h1:before,
 h2:before,
 h3:before {
-    content: '#   ';
+    content: '# ';
     color: #35c5ff;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 /* horizontal divider */
@@ -243,16 +229,16 @@ ol {
 
 /* blockquote */
 blockquote {
-  border-left: 4px solid #45A9F9;
+  border-left: 4.5px solid #45A9F9;
   margin: 0 0 1.875rem 1.875rem;
   padding: 4px 15px;
   color: #eceff4;
   background-color: rgb(29, 31, 35);
-  font-family: "黑体", "Consolas", monospace;
+  font-family: 'jetbrainsmono';
 }
 
 blockquote blockquote {
-  padding-right: 0em;
+  padding-right: 2.8em;
 }
 
 /* table */
@@ -1065,6 +1051,7 @@ code {
   	padding-bottom: 0.15em;
   border: 2px solid #666;
   border-radius: 0.25rem;
+  font-family: 'jetbrainsmono';
 }
 
 /* codeblock */
@@ -1742,9 +1729,8 @@ g > text.slice {
   stroke-width: 1.2;
 }
 
-.md-fences[lang="sequence"] text,
-.md-fences[lang="flow"] text {
-  font-family: "Consolas" !important;
+.md-fences {
+  font-family: "jetbrainsmono";
 }
 
 /* remove box shadow when not edit graph */
@@ -1879,18 +1865,18 @@ mark {
 }
 
 kbd {
-  background: rgb(114, 111, 111);
+  background: rgb(32, 32, 32);
   color: #ddd;
   border-color: #444;
   box-shadow: 0 2px 0 #333;
-  font-family: Consolas, 'Courier New', monospace;
+  font-family: 'jetbrainsmono', 'Courier New', monospace;
   font-size: large;
 }
+
 
 /* highlight开始 */
 
 /*
-@ 本CSS保留了Panda主题的高亮，如果您要美化，
 @ 可以使用我开发的GitHub项目：
 @ [Typora-Theme-Night-Codelight](https://github.com/adkinsm2020/Typora-Theme-Night-Codelight)，
 @ 可以直接根据 教程/[wiki](https://github.com/Typora-Theme-Night-Codelight/wiki/)/[我的博客](https://www.adkinsm.top/)  直接下载，重命名进这个文件夹目录。

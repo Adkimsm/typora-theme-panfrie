@@ -1,0 +1,183 @@
+
+/* highlight开始 */
+
+/*
+@ 可以使用我开发的GitHub项目：
+@ [Typora-Theme-Night-Codelight](https://github.com/adkinsm2020/Typora-Theme-Night-Codelight)，
+@ 可以直接根据 教程/[wiki](https://github.com/Typora-Theme-Night-Codelight/wiki/)/[我的博客](https://www.adkinsm.top/)  直接下载，重命名进这个文件夹目录。
+@ 可以直接按照Night的方法替换这一段CSS。
+@ 如果用着顺手，麻烦为我的这两个项目：
+@ [Typora-Theme-Night-Codelight](https://github.com/adkinsm2020/Typora-Theme-Night-Codelight)
+@ [Typora-Theme-Panfrie](https://github.com/adkinsm2020/Typora-Theme-Panfrie)
+@ 点亮Star。
+@ 你的滴水之功，
+@ 对我如涌泉。
+*/
+
+.cm-s-inner .cm-property {
+    color: var(--code-blue-color) !important;
+  }
+  
+  .cm-s-inner .cm-operator {
+    color: var(--code-cyan-color) !important;
+  }
+  
+  .cm-s-inner .cm-keyword {
+    color: var(--code-purple-color) !important;
+  }
+  
+  .cm-s-inner .cm-tag {
+    color: var(--code-red-color) !important;
+  }
+  
+  .cm-s-inner .cm-attribute {
+    color: var(--code-orange-color) !important;
+  }
+  
+  .cm-s-inner .cm-string {
+    color: var(--code-green-color) !important;
+  }
+  
+  .cm-s-inner .cm-comment,
+  .cm-s-inner.cm-comment {
+    /*     color: var(--code-orange-color) !important; */
+    color: var(--code-grey-color) !important;
+  }
+  
+  .cm-s-inner .cm-header,
+  .cm-s-inner .cm-def,
+  .cm-s-inner.cm-header,
+  .cm-s-inner.cm-def {
+    /*     color: var(--code-red-color) !important; */
+    color: var(--code-blue-color) !important;
+  }
+  
+  .cm-s-inner .cm-meta,
+  .cm-s-inner .cm-qualifier {
+    color: var(--code-red-color) !important;
+  }
+  
+  .cm-s-inner .cm-builtin {
+    /*     color: var(--code-blue-color) !important; */
+    color: var(--code-cyan-color) !important;
+  }
+  
+  .cm-s-inner .cm-bracket {
+    color: var(--text-color1) !important;
+  }
+  
+  .cm-s-inner .cm-number {
+    color: var(--code-orange-color) !important;
+  }
+  
+  .cm-s-inner .cm-variable {
+    color: var(--text-color1) !important;
+  }
+  
+  .cm-s-inner .cm-variable-2 {
+    /*     color: var(--code-blue-color) !important; */
+    color: var(--code-yellow-color) !important;
+  }
+  
+  .cm-s-typora-default .cm-header,
+  .cm-s-typora-default .cm-property {
+    color: var(--code-red-color) !important;
+  }
+  
+  .cm-s-typora-default .cm-string {
+    /*     color: var(--code-blue-color); */
+    color: var(--code-purple-color);
+  }
+  
+  .cm-s-typora-default .cm-atom {
+    color: var(--code-grey-color);
+  }
+  
+  .cm-s-typora-default .cm-number {
+    color: var(--code-orange-color);
+    font-style: normal !important;
+  }
+  
+  .cm-s-typora-default .cm-link {
+    color: var(--code-blue-color);
+  }
+  
+  .cm-s-typora-default .CodeMirror-activeline-background {
+    background: var(--hover-bg-color1);
+  }
+  
+  .cm-s-typora-default .cm-comment,
+  .cm-s-typora-default .cm-code {
+    color: var(--code-purple-color);
+  }
+  
+  .cm-s-typora-default .cm-tag {
+    /*     color: var(--code-red-color); */
+    color: var(--code-blue-color);
+  }
+  
+  .cm-s-typora-default .cm-strong,
+  .cm-s-typora-default .cm-em,
+  .cm-s-typora-default .cm-del {
+    /*     color: var(--code-green-color); */
+    color: var(--code-orange-color);
+  }
+  
+  .cm-s-typora-default .cm-block-start.cm-variable-2 {
+    /*     color: var(--code-orange-color); */
+    color: var(--code-red-color);
+  }
+  
+  .cm-formatting-task .cm-formatting-task {
+    color: var(--code-red-color);
+  }
+  
+  /* math formula tag */
+  .cm-s-inner .cm-atom,
+  .cm-s-inner.cm-atom {
+    color: var(--code-blue-color);
+  }
+  
+  /* inline codeblock in source mode */
+  .cm-s-typora-default .cm-comment {
+    color: var(--code-green-color);
+  }
+  
+  /* horizontal divider when language is markdown */
+  .cm-s-inner .cm-hr {
+    color: var(--text-color1);
+  }
+  
+  /* variable type when language is c/cpp */
+  .cm-s-inner .cm-variable-3 {
+    color: var(--code-purple-color);
+  }
+  
+  /* in pie chart and flowchart */
+  .cm-s-inner .cm-quote,
+  .cm-s-inner.cm-quote {
+    color: var(--code-green-color);
+  }
+  
+  /* unknown highlight keyword */
+  .cm-s-inner .cm-link {
+    color: var(--code-blue-color);
+  }
+  
+  .cm-s-inner .cm-negative {
+    color: #d95050;
+  }
+  
+  .cm-s-inner .cm-positive {
+    color: #50e650;
+  }
+  
+  .cm-s-inner .cm-string-2 {
+    color: #f50;
+  }
+  
+  .CodeMirror-gutters {
+    border-right: none;
+  }
+  
+  /* HighLight结束 */
