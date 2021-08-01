@@ -21,7 +21,9 @@
 
 ## 截图
 
-截图以后再搞出来吧
+![image](https://user-images.githubusercontent.com/75924586/127771110-87dd47fa-e3ff-4ab2-8ee0-8435b2a532f1.png)
 
->> Ps： 
+
+>> Ps：
+
 >> 主题仅在Windows10 1909版本，Typora0.96版本测试。
