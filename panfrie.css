@@ -10,8 +10,6 @@ _____       ___   __   _   _____   _____    _   _____
 
 */
 
-@import "./panfrie/code.block.high.light.css";
-
 :root {
 	/* dark color for background*/
 	/* default color */
@@ -135,6 +133,11 @@ _____       ___   __   _   _____   _____    _   _____
 	src: url("./panfrie/JetBrainsMono-Regular.ttf");
 }
 
+@font-face {
+	font-family: "nserif";
+	src: url("./panfrie/NotoSerifCJKsc-Black.otf");
+}
+
 /* basic style */
 html {
 	font-size: 15.5px;
@@ -148,7 +151,11 @@ body {
 }
 
 #write {
+	box-shadow: 15px 30px 60px rgba(0, 0, 0, 0.45);
+	margin-top: 30px;
+	margin-bottom: 30px;
 	max-width: 1000px;
+	border-radius: 30px;
 }
 
 /* text selection background color */
@@ -172,41 +179,29 @@ body {
 h1 {
 	padding-top: 0.25em;
 	padding-bottom: 0.25em;
-	font-weight: normal;
 	font-size: 2.5rem;
-	text-align: left;
 }
 
 h2 {
 	padding-top: 0.6em;
 	padding-bottom: 0.6em;
 	font-size: 2.2em;
-	font-weight: normal;
+	margin-left: 10px;
 }
 
 h3 {
 	padding-top: 0.25em;
 	padding-bottom: 0.25em;
-	font-weight: normal;
 	font-size: 1.6em;
-	text-align: left;
+	margin-left: 20px;
 }
 
-h4 {
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
-	font-size: 1.2em;
+h1,
+h2,
+h3 {
+	font-family: "nserif";
+	font-weight: 400;
 }
-
-/*h2:after{
-	border-bottom: 1px solid var(--text-color1);
-    content: '';
-    width: 100px;
-    display: block;
-    margin: 0 auto;
-    height: 1px;
-}
-*/
 
 /* horizontal divider */
 hr {
@@ -1855,7 +1850,7 @@ input[type="checkbox"]:checked:after {
 mark {
 	background-color: #ffb86c;
 	border-radius: 3px;
-	padding: 1px 3px 1px 3px;
+	padding: 4px;
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
